@@ -1,10 +1,18 @@
 import {FC} from 'react'
-import {RightContainer} from "./styles"
+import {RightContainer, Top, NotificationContainer} from "./styles"
+import Notification from "../SVG/Notification"
 
 const Index:FC = () => {
   return (
     <RightContainer>
-        right
+        <Top>
+            <NotificationContainer>
+                <div>
+                    <Notification />
+                </div>
+                
+            </NotificationContainer>
+        </Top>
     </RightContainer>
   )
 }

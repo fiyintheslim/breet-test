@@ -25,7 +25,7 @@ export const Item = styled.div<{active?:boolean}>`
 `
 
 export const Icon = styled.div`
-    background: rgba(100, 191, 211, 0.2);
+    background: rgba(100, 191, 211, 0.08);
     border-radius: ${0.063 * 10}rem;
     width: ${32 * 0.063}rem;
     height: ${32 * 0.063}rem;
