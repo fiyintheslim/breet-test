@@ -3,16 +3,18 @@ import {Item, Icon, Text} from "./styles"
 
 interface Props{
     img: any,
-    text: string
+    text: string,
+    active: boolean,
+    className?: string
 }
 
-const Index:FC<Props> = ({img, text}) => {
+const Index:FC<Props> = ({img, text, active, className}) => {
   return (
-    <Item>
+    <Item active={active} className={className}>
         <Icon >
             <img src={img} alt="icon" />
         </Icon>
-        <Text>{text}</Text>
+        <Text >{text}</Text>
     </Item>
   )
 }
