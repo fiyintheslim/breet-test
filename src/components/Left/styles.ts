@@ -14,5 +14,6 @@ export const MenuSection = styled.div`
     .menu-title{
         font-size: ${12 * 0.063}rem;
         line-height: ${12 * 0.063}rem;
+        margin-bottom: ${24 * 0.063}rem;
     }
 `
