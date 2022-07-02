@@ -6,6 +6,10 @@ import trade from "./assets/Trade.png"
 import support from "./assets/Support.png"
 import settings from "./assets/Settings.png"
 
+import btc from "./assets/Bitcoin.png"
+import eth from "./assets/Ethereum.png"
+import lite from "./assets/Litecoin.png"
+
 export const topLeft = [
     {
         img:dashboard,
@@ -44,5 +48,29 @@ export const bottomLeft = [
         img:settings,
         text:"Cryto trade History",
         active:true
+    }
+]
+
+export const sell = [
+    {
+        logo:btc,
+        name:"Bitcoin",
+        short:"BTC",
+        amnt:"26,452.00",
+        fiat:"NGN | GHS"
+    },
+    {
+        logo:eth,
+        name:"Ethereum",
+        short:"ETH",
+        amnt:"19,093.93",
+        fiat:"NGN | GHS"
+    },
+    {
+        logo:lite,
+        name:"Litecoin",
+        short:"LTC",
+        amnt:"773",
+        fiat:"NGN | GHS"
     }
 ]

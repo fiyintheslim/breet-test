@@ -11,6 +11,17 @@ export const Top = styled.div`
     justify-content: space-between;
     padding: 0 ${20 * 0.063}rem;
     margin-bottom: ${66 * 0.063}rem;
+
+    .user-info{
+        display: flex;
+        align-items: center;
+    }
+    .name{
+        color: #324168;
+        font-weight: 600;
+        margin-right: ${14 *0.063}rem;
+        font-size: ${14 *0.063}rem;
+    }
 `
 
 export const NotificationContainer = styled.div`
@@ -21,7 +32,7 @@ export const NotificationContainer = styled.div`
     width: ${32 * 0.063}rem;
     height: ${32 * 0.063}rem;
     border-radius: ${10 * 0.063}rem;
-    div{
+    .notification-bg{
         position: relative;
 
         &:before{
@@ -43,4 +54,21 @@ export const Profile = styled.div`
     display: flex;
     align-items: center;
 
+`
+
+export const AvatarBG = styled.div`
+    width: ${26 * 0.063}rem;
+    height: ${26 * 0.063}rem;
+    background: rgba(100, 191, 211, 0.08);
+    border-radius: 50%;
+    margin-right: ${15 * 0.063}rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 `
