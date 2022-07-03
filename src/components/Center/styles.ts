@@ -4,4 +4,20 @@ export const CenterContainer = styled.div`
     flex-grow: 1;
     border-radius: 1rem;
     background: rgba(100, 191, 211, 0.08);
+    padding: ${28 * 0.063}rem ${24 * 0.063}rem ${61 * 0.063}rem;
+
+    
+`
+export const Heading = styled.h3`
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #324168;
+    margin: 0 auto ${43 * 0.063}rem;
+    width: ${658 * 0.063}rem;
+`
+
+export const Grid = styled.div`
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    justify-content: center;
 `
