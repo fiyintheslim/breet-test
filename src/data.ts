@@ -10,6 +10,9 @@ import btc from "./assets/Bitcoin.png"
 import eth from "./assets/Ethereum.png"
 import lite from "./assets/Litecoin.png"
 
+import sold from "./assets/soldbitcoin.png"
+import withdrawal from "./assets/withdraw.png"
+
 export const topLeft = [
     {
         img:dashboard,
@@ -72,5 +75,24 @@ export const sell = [
         short:"LTC",
         amnt:"773",
         fiat:"NGN | GHS"
+    }
+]
+
+export const recent = [
+    {
+        img:sold,
+        time:"July 7",
+        name:"Sold Bitcoin",
+        account:"FW749374HFHWERHFIWH",
+        amount:"0.0042 BTC",
+        last:"₦69,000.00"
+    },
+    {
+        img:sold,
+        time:"July 1",
+        name:"Withdrawal",
+        account:"Access Bank",
+        amount:"₦500,000",
+        last:"0039847384"
     }
 ]

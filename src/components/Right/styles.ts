@@ -4,6 +4,13 @@ export const RightContainer = styled.div`
     margin-top: ${66 * 0.063}rem;
     width: ${416 * 0.063}rem;
     padding: 0 ${14 * 0.063}rem;
+
+    hr{
+        border: none;
+        background: #F5FAFF;
+        height: ${2 * 0.063}rem;
+        margin-bottom: ${20 * 0.063}rem;
+    }
 `
 
 export const Top = styled.div`

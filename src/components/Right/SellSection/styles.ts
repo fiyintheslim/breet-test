@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Section = styled.div`
-
+    margin-bottom: ${40 * 0.063}rem;
     h3{
         font-size: ${18 * 0.063}rem;
         height: ${18 * 0.063}rem;
@@ -11,12 +11,7 @@ export const Section = styled.div`
         padding-left: ${20 * 0.063}rem;
     }
 
-    hr{
-        border: none;
-        background: #F5FAFF;
-        height: ${2 * 0.063}rem;
-        margin-bottom: ${20 * 0.063}rem;
-    }
+    
     .sell-arrow{
         display: flex;
         justify-content: center;

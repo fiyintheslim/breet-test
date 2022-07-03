@@ -5,7 +5,9 @@ import ProfileDown from "../SVG/ProfileDown"
 import Avatar from "../../assets/avatar.png"
 import Sell from "./SellSection"
 import Item from "./SellItem"
-import {sell} from "../../data"
+import Recent from "./RecentSection"
+import RecentItem from "./RecentItem"
+import {sell, recent} from "../../data"
 
 const Index:FC = () => {
   return (
@@ -26,8 +28,11 @@ const Index:FC = () => {
         </Top>
         <Sell>
             {sell.map((data, i)=><Item key={i} data={data} />)}
-            
         </Sell>
+        <Recent>
+            {recent.map((data, i)=><RecentItem key={i} data={data} />)}
+            
+        </Recent>
     </RightContainer>
   )
 }
