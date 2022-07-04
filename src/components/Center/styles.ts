@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const CenterContainer = styled.div`
     flex-grow: 1;
     border-radius: 1rem;
-    background: rgba(100, 191, 211, 0.08);
+    background: rgb(243 251 253);
     padding: ${28 * 0.063}rem ${24 * 0.063}rem ${61 * 0.063}rem;
 
     

@@ -4,6 +4,7 @@ export const Item = styled.div<{active?:boolean}>`
     display: flex;
     margin-bottom: ${32 * 0.063}rem;
     align-items: center;
+    position: relative;
 
     div{
         background: ${prop=> prop.active ? "#64BFD3" : ""};
@@ -19,7 +20,27 @@ export const Item = styled.div<{active?:boolean}>`
         }
          p{
             color: #64BFD3
-         }  
+         } 
+         
+         &:after{
+            content:"•";
+            background:rgb(243 251 253);
+            position: absolute;
+            right: -3.3rem;
+            /* padding-left: 3rem; */
+            height: ${39 * 0.063}rem;
+            width: ${39 * 0.063}rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.6rem;
+            /* border-top-left-radius: 80rem;
+            border-bottom-left-radius: 80rem; */
+            transform: rotate(45deg);
+            font-size: 1.2rem;
+            color: #64BFD3;
+            
+         }
     }
     
 `

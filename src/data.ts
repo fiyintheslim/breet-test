@@ -85,7 +85,8 @@ export const recent = [
         name:"Sold Bitcoin",
         account:"FW749374HFHWERHFIWH",
         amount:"0.0042 BTC",
-        last:"₦69,000.00"
+        last:"₦69,000.00",
+        arrow: true
     },
     {
         img:sold,
@@ -93,6 +94,7 @@ export const recent = [
         name:"Withdrawal",
         account:"Access Bank",
         amount:"₦500,000",
-        last:"0039847384"
+        last:"0039847384",
+        arrow:false
     }
 ]

@@ -30,7 +30,8 @@ export const ImgContainer = styled.div`
     height: ${48 * 0.063}rem;
     border-radius: ${16 * 0.063}rem;
     margin-right: ${9 * 0.063}rem;
-    background: rgba(251, 119, 75, 0.1);;
+    background: rgba(251, 119, 75, 0.1);
+    position: relative;
 `
 
 export const Account = styled.div`
@@ -77,4 +78,18 @@ export const Right = styled.div`
         display: flex;
         align-items: center;
     }
+`
+
+export const ArrowContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    width: ${22 * 0.063}rem;
+    height: ${22 * 0.063}rem;
+    border-radius: ${30 * 0.063}rem;
+    box-shadow: -2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: -0.3rem;
+    top: -0.3rem;
 `

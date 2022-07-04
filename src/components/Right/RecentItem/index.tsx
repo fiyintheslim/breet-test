@@ -1,5 +1,6 @@
 import {FC} from 'react'
-import {Item, Details, Left, Right, Account, ImgContainer} from "./styles"
+import {Item, Details, Left, Right, Account, ImgContainer, ArrowContainer} from "./styles"
+import ZigzagArrow from "../../SVG/ZigzagArrow"
 
 interface Details {
     img:string
@@ -7,10 +8,12 @@ interface Details {
     name:string,
     account:string,
     amount:string,
-    last:string
+    last:string,
+    arrow:boolean
 }
 interface Props {
-    data: Details
+    data: Details,
+    
 }
 const Index:FC<Props> = ({data}) => {
     const {
@@ -20,6 +23,7 @@ const Index:FC<Props> = ({data}) => {
         account,
         amount,
         last,
+        arrow
     } = data
 
   return (
@@ -31,6 +35,11 @@ const Index:FC<Props> = ({data}) => {
         <Left>
             <ImgContainer>
                 <img src={img} alt="illustration" />
+                {arrow && 
+                    <ArrowContainer>
+                        <ZigzagArrow />
+                    </ArrowContainer>
+                }
             </ImgContainer>
             
             <Account>
