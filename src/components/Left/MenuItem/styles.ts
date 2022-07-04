@@ -5,24 +5,8 @@ export const Item = styled.div<{active?:boolean}>`
     margin-bottom: ${32 * 0.063}rem;
     align-items: center;
     position: relative;
-
-    div{
-        background: ${prop=> prop.active ? "#64BFD3" : ""};
-        
-    }
-    p{
-        color: ${prop=> prop.active ? "#324168" : ""}
-    }
-    &.logout{
-        margin-top: ${116 * 0.063}rem;
-        div{
-            background: none;
-        }
-         p{
-            color: #64BFD3
-         } 
-         
-         &:after{
+    ${prop=> prop.active ? `
+        &:after{
             content:"•";
             background:rgb(243 251 253);
             position: absolute;
@@ -41,6 +25,25 @@ export const Item = styled.div<{active?:boolean}>`
             color: #64BFD3;
             
          }
+    ` : ""}
+
+    div{
+        background: ${prop=> prop.active ? "#64BFD3" : ""};
+        
+    }
+    p{
+        color: ${prop=> prop.active ? "#324168" : ""}
+    }
+    &.logout{
+        margin-top: ${116 * 0.063}rem;
+        div{
+            background: none;
+        }
+         p{
+            color: #64BFD3
+         } 
+         
+         
     }
     
 `
