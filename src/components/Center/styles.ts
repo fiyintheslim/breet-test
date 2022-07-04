@@ -16,8 +16,14 @@ export const Heading = styled.h3`
     width: ${658 * 0.063}rem;
 `
 
+export const SettingsContainer = styled.div`
+    margin-bottom: ${4 * 0.063}rem;
+`
+
+
 export const Grid = styled.div`
     display: grid;
-    grid-template: auto / 1fr 1fr;
+    grid-template: auto / ${322 * 0.063}rem ${322 * 0.063}rem;
     justify-content: center;
+    gap: ${14 * 0.063}rem;
 `

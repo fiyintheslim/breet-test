@@ -7,6 +7,7 @@ export const SwitchContainer = styled.div`
     border-radius: ${5 * 0.063}rem;
     position: relative;
     
+    
 
     input{
         display: none;
@@ -31,6 +32,7 @@ export const Label = styled.label`
     height: 100%;
     position: relative;
     display: flex;
+    cursor: pointer;
     
     
     &:after{
